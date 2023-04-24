@@ -1,15 +1,60 @@
-.cardItem{
-    width: 100%;
-    border-radius: 10px;
-    background-color: gray;
-    display: inline-flex;
-    margin: 10px;
-    box-shadow: rgba(0,0,0,0.295) 0px 0px 10px;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+body {
+    background: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.7;
+    font-weight: 300;
+    color:darkmagenta;
+}
+
+.cardItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 24px;
+    padding: 24px;
+    flex-wrap: wrap;
+}
+
+.Header {
+    display:flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
+    padding: 24px;
+    background: darkmagenta;
+}
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 12px;
+    margin-bottom: 36px;
+}
 .card-logo{
     padding: 10px;
 }
 .card-content{
     color:white
 }
+
+.info {
+    white-space:wrap;
+} 
